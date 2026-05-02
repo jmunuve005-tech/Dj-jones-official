@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DJ Jones Official</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background: #000; overflow-x: hidden; }
+    .neon { text-shadow: 0 0 10px #ff004c, 0 0 30px #ff004c; }
+  </style>
+</head>
+<body class="text-white font-sans">
+
+<!-- NAVBAR -->
+<nav class="fixed w-full flex justify-between items-center px-6 py-4 bg-black/70 backdrop-blur z-50">
+  <h1 class="font-bold text-lg neon">DJ JONES</h1>
+  <div class="space-x-6 hidden md:block">
+    <a href="#mixes">Mixes</a>
+    <a href="#booking">Book</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO VIDEO BACKGROUND -->
+<section class="h-screen relative flex items-center justify-center text-center">
+  <video autoplay muted loop class="absolute w-full h-full object-cover">
+    <source src="YOUR_VIDEO.mp4" type="video/mp4">
+  </video>
+  <div class="relative z-10">
+    <h1 class="text-6xl md:text-8xl font-bold neon">DJ JONES OFFICIAL</h1>
+    <p class="mt-4 text-gray-300">Nairobi's Elite Club DJ</p>
+    <a href="#booking" class="mt-6 inline-block bg-pink-600 px-8 py-3 rounded-full hover:scale-110 transition">Book Now</a>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="py-16 text-center">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+    <div><h2 class="text-4xl">100+</h2><p class="text-gray-400">Events</p></div>
+    <div><h2 class="text-4xl">50K+</h2><p class="text-gray-400">Audience</p></div>
+    <div><h2 class="text-4xl">5+</h2><p class="text-gray-400">Years</p></div>
+    <div><h2 class="text-4xl">Top</h2><p class="text-gray-400">DJ</p></div>
+  </div>
+</section>
+
+<!-- MIXES -->
+<section id="mixes" class="py-16 px-6">
+  <h2 class="text-3xl mb-10">Featured Mixes</h2>
+  <div class="grid md:grid-cols-2 gap-8">
+    <iframe class="w-full h-64 rounded-xl" src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
+    <iframe class="w-full h-64 rounded-xl" src="https://w.soundcloud.com/player/?url=https://soundcloud.com"></iframe>
+  </div>
+</section>
+
+<!-- EVENTS TIMELINE -->
+<section class="py-16 px-6 bg-gray-900">
+  <h2 class="text-3xl mb-10">Past Events</h2>
+  <ul class="space-y-4">
+    <li>🔥 Club Night - Nairobi</li>
+    <li>🔥 Private Party - Westlands</li>
+    <li>🔥 Campus Tour - Kenya</li>
+  </ul>
+</section>
+
+<!-- PRICING -->
+<section class="py-16 px-6 text-center">
+  <h2 class="text-3xl mb-10">Booking Packages</h2>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="bg-gray-900 p-6 rounded-xl">
+      <h3>Basic</h3>
+      <p class="text-2xl">KES 10K</p>
+    </div>
+    <div class="bg-gray-900 p-6 rounded-xl border-2 border-pink-600">
+      <h3>Standard</h3>
+      <p class="text-2xl">KES 20K</p>
+    </div>
+    <div class="bg-gray-900 p-6 rounded-xl">
+      <h3>Premium</h3>
+      <p class="text-2xl">KES 40K</p>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="py-16 px-6 bg-gray-950">
+  <h2 class="text-3xl mb-6">Book Now</h2>
+  <form onsubmit="sendWhatsApp(event)" class="grid gap-4 max-w-xl">
+    <input id="name" placeholder="Name" class="p-3 bg-gray-800">
+    <input id="event" placeholder="Event Type" class="p-3 bg-gray-800">
+    <button class="bg-pink-600 p-3">Send via WhatsApp</button>
+  </form>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-10 text-center">
+  <p>📧 djjonesofficial254@gmail.com</p>
+  <p>📞 0720678941</p>
+</section>
+
+<!-- FLOATING BUTTON -->
+<a href="https://wa.me/254720678941" class="fixed bottom-6 right-6 bg-green-500 px-5 py-3 rounded-full">Chat</a>
+
+<script>
+function sendWhatsApp(e){
+ e.preventDefault();
+ let name=document.getElementById('name').value;
+ let event=document.getElementById('event').value;
+ let msg=`Booking:%0AName:${name}%0AEvent:${event}`;
+ window.open(`https://wa.me/254720678941?text=${msg}`);
+}
+</script>
+
+</body>
+</html>
