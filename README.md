@@ -1,85 +1,60 @@
-# DJ Jones Official 🎵
+# DJ Jones Official Portfolio
 
-Professional portfolio and booking website for DJ Jones - Nairobi's Elite Club DJ.
+🎵 Professional DJ Portfolio Website for DJ Jones - Nairobi's Elite Club DJ
 
 ## Features
 
-✨ Modern dark theme with neon styling  
-🎥 Hero video background section  
-📊 Stats showcase (events, audience, experience)  
-🎧 Featured mixes from YouTube & SoundCloud  
-📅 Past events timeline  
-💰 Booking packages with pricing  
-💬 WhatsApp integration for bookings  
-📱 Fully responsive design  
+- **Responsive Design** - Mobile-friendly layout using Tailwind CSS
+- **Video Hero Section** - Eye-catching video background
+- **Neon Styling** - Modern neon text effects
+- **Booking System** - Direct WhatsApp integration for easy bookings
+- **Stats Display** - Showcase experience and achievements
+- **Pricing Packages** - Three-tier booking packages
+- **Event Timeline** - Display past events and accomplishments
+- **Media Integration** - YouTube and SoundCloud embeds for mixes
 
-## Quick Start
+## Live Demo
 
-### 1. Clone the Repository
+Visit the live website: [https://jmunuve005-tech.github.io/dj-jones-official/](https://jmunuve005-tech.github.io/dj-jones-official/)
+
+## Getting Started
+
+1. Clone the repository:
 ```bash
 git clone https://github.com/jmunuve005-tech/dj-jones-official.git
-cd dj-jones-official
 ```
 
-### 2. Open Locally
-Simply open `index.html` in your web browser:
-```bash
-open index.html  # macOS
-start index.html # Windows
-xdg-open index.html # Linux
-```
+2. Open `index.html` in your browser
 
-### 3. Deploy with GitHub Pages
-- Go to your repository settings
-- Scroll to **Pages** section
-- Select **Deploy from a branch**
-- Choose `main` branch
-- Your site will be live at: `https://jmunuve005-tech.github.io/dj-jones-official/`
+## Customization
 
-## Customization Guide
+### Update Video Background
+Replace `YOUR_VIDEO.mp4` with your actual video file path in the hero section.
 
-### Update Contact Information
-Edit these in `index.html`:
-- **Email**: Line with `djjonesofficial254@gmail.com`
-- **Phone**: Replace `0720678941` with your number
-- **WhatsApp**: Replace `254720678941` with your WhatsApp number
+### Update Media Embeds
+Replace YouTube and SoundCloud embed IDs with your actual content:
+- YouTube: `https://www.youtube.com/embed/YOUR_VIDEO_ID`
+- SoundCloud: Update the SoundCloud URL
 
-### Add Your Media
-- **Hero Video**: Replace `YOUR_VIDEO.mp4` with your video file
-- **YouTube Mixes**: Replace `VIDEO_ID` with actual YouTube video IDs
-- **SoundCloud**: Add your SoundCloud profile link
+### Modify Contact Information
+Update the following in the HTML:
+- Email: `djjonesofficial254@gmail.com`
+- Phone: `0720678941`
+- WhatsApp Number: `254720678941`
 
-### Customize Stats
-Update the stats section with your actual numbers:
-```html
-<h2 class="text-4xl">YOUR_NUMBER</h2>
-```
+## Technologies Used
 
-### Update Events
-Add your past events to the timeline:
-```html
-<li>🔥 Your Event - Location</li>
-```
+- HTML5
+- Tailwind CSS
+- JavaScript
+- WhatsApp API Integration
 
-## Tech Stack
+## Contact
 
-- **HTML5** - Structure
-- **Tailwind CSS** - Styling
-- **JavaScript** - WhatsApp integration
-- **GitHub Pages** - Hosting (optional)
-
-## Browser Support
-
-✅ Chrome  
-✅ Firefox  
-✅ Safari  
-✅ Edge  
-✅ Mobile browsers  
+- 📧 Email: djjonesofficial254@gmail.com
+- 📞 Phone: 0720678941
+- 💬 WhatsApp: [Chat Now](https://wa.me/254720678941)
 
 ## License
 
-Free to use for personal or commercial purposes.
-
----
-
-**Need help?** Contact: djjonesofficial254@gmail.com
+MIT License - Feel free to use this template for your own DJ portfolio!
